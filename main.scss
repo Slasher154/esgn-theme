@@ -1,0 +1,46 @@
+$enable-caret: true;
+$red: #a61e23;
+$yellow: #ebd645;
+$orange: #f7971f;
+$green: #adff2f;
+$body-bg: #2B3036;
+$white: #fff;
+$body-color: $white;
+$input-bg: rgba(255,255,255,.1);
+$input-color: $white;
+$input-border-color: rgba(255,255,255,.25);
+$input-group-addon-bg: $input-bg;
+$pink: #cd5c5c;
+$danger: $pink;
+$nav-link-padding-x: 1rem;
+$pagination-bg: rgba(0,0,0,.25);
+$link-color: $white;
+$pagination-active-bg: $red;
+$pagination-border-width: 0px;
+$gray-700: #495057;
+$pagination-hover-bg: $gray-700;
+$card-border-width: 0px;
+$card-bg: rgba(0,0,0,.25);
+$list-group-bg: rgba(0,0,0,.25);
+$component-active-bg: $red;
+$modal-content-bg: #191a27;
+$gray-300: #dee2e6;
+$modal-content-border-color: $gray-300;
+$modal-header-border-width: 0px;
+$progress-bg: rgba(0,0,0,.25);
+$breadcrumb-bg: transparent;
+$breadcrumb-active-color: $yellow;
+$breadcrumb-divider-color: $body-color;
+$close-color: $white;
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// Our custom style
+.nav-bg {
+  background-color: #383b40;
+  box-shadow: 0 0.25rem 0.125rem rgba(0,0,0,.25);
+}
+
+.text-red {
+  color: $red;
+}
