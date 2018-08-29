@@ -1,5 +1,7 @@
 $enable-caret: true;
 $red: #a61e23;
+$blue: #0b5a9c;
+$secondary: $red;
 $yellow: #ebd645;
 $orange: #f7971f;
 $green: #adff2f;
@@ -32,15 +34,240 @@ $breadcrumb-bg: transparent;
 $breadcrumb-active-color: $yellow;
 $breadcrumb-divider-color: $body-color;
 $close-color: $white;
+$bg:#383b40;
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
 // Our custom style
+*{
+  font-size: 16px;
+}
+
+.text-truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.h-primary{
+  color: $primary;
+}
+
+.h-secondary{
+  color: red;
+}
+
+.material-icons{
+  font-size: 1rem;
+}
+
+.dropdown-item{
+  color: $pink;
+}
+
+
+/////////////////////// header ///////////////////////
 .nav-bg {
   background-color: #383b40;
   box-shadow: 0 0.25rem 0.125rem rgba(0,0,0,.25);
+  
+}
+.navbar .navbar-nav .nav-link{
+    color: $danger;
+  }
+
+.navbar-expand{
+  justify-content: space-between;
 }
 
-.text-red {
-  color: $red;
+.nav-help{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
+
+.fa:hover{
+color: $blue;
+border-color: $blue;
+transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.sticky{
+  position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#navbar {
+  //background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 1s;
+  z-index: 20;
+}
+
+/////////////////////// tour-carousel ///////////////////////
+
+.tour-carousel{
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-top: 10rem;
+  padding-bottom: 0.7rem;
+/*
+  table{
+    //width: 1rem;
+  }
+
+  p{
+    transform: rotate(90deg);
+    //position: relative;
+   } 
+
+ i{
+  transform: rotate(90deg);
+ // position: absolute;
+ } */
+}
+
+////////////////////// video ///////////////////////
+
+.video-play{
+  display: flex;
+  justify-content: center;
+}
+
+///////////////////// tournament ////////////////////
+
+.tournament{
+  background: $bg;
+  .tour-item{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,auto);
+    padding-top: 1rem;
+    .tour-header{
+      background-color: $secondary;
+    }
+    .tour-img{
+      display: flex;
+      justify-content: center;
+      background-color: $gray-900;
+      img{height: 15rem; max-width:100%; }
+    }
+    .tour-creater{
+      display: flex;
+      justify-content: baseline;
+      background-color: $black;
+      img{width:auto; max-height: 1.5rem; padding-left: 0.5rem; padding-right: 0.7rem;}
+    }
+  }
+  .more-tour{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+///////////////////// News ////////////////////
+
+.news
+{
+  .news-item{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(2,auto);
+    padding-top: 1rem;
+    .news-header{
+      background-color: $secondary;
+    }
+    .news-view{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: baseline;
+    }
+    .news-img{
+      grid-row: 1/3;
+      display: flex;
+      justify-content: center;
+      background-color: $gray-900;
+      img{height: 10rem; max-width:100%; }
+    }
+    .news-information{
+      grid-column: 1/3;
+      display: grid;
+      grid-template-columns: 2fr 3fr;
+      grid-template-rows: 3fr 1fr;
+      //height: 10rem;
+    }
+    .news-detail{
+      display: flex;
+      justify-content: baseline;
+      color:$dark; 
+      background-color: $light;
+    }
+  }
+  .more-news{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+///////////////////// footer ////////////////////
+.footer-bg{
+  background-color: $gray-900;
+}
+
+.footer{
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.footer-esgn{
+  img{height: 4rem; width: auto;}
+  color: $gray-500;
+}
+
+.nav-footer,.contact-footer{
+  li{list-style: none;}
+  a{color: #0b5a9c;}
+}
+
+.copyright-footer{
+  background-color: $black;
+  text-align: center;
+}
+
+/*
+@media only screen and (min-width:768px){
+  *{
+    font-size: 16px;
+  }
+  
+  .nav-bg {
+    background-color: #383b40;
+    box-shadow: 0 0.25rem 0.125rem rgba(0,0,0,.25);
+    
+  }
+  .navbar .navbar-nav .nav-link{
+      color: $danger;
+    }
+  
+  .navbar-expand{
+    justify-content: space-between;
+  }
+  
+  .nav-help{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .fa:hover{
+  color: $blue;
+  border-color: $blue;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+}
+*/

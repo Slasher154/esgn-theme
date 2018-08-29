@@ -3,14 +3,22 @@
 <head>
     <link rel="stylesheet" href="main.css"/>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>ESGN</title>
 </head>
 <body>
-    <div class="nav-bg px-md-4">
+    <!-- Navbar -->
+    <div id="navbar" class="container nav-bg px-md-4 ">
             <nav class="navbar navbar-expand">
                 <a href="#" class="navbar-brand">
                     <img src="images/header_logo.png" alt="ESGN Logo" height="56px">
                 </a>
+                <div class="nav-login">
+                    <button type="button" class="btn btn-secondary ml-2">Register</button>
+                    <button type="button" class="btn btn-primary ml-2">Login</button>
+                </div>
             </nav>
             <nav class="navbar navbar-dark navbar-expand-lg">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,28 +35,191 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dropdown
+                                Game
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-menu nav-bg" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">ROV</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
+                                <a class="dropdown-item" href="#">PUBG</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">FIFA</a>
                             </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News</a>
                         </li>
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <input class="form-control mr-sm-2" type="search" placeholder="User or Team" aria-label="Search">
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                     </form>
+                </div>
+                <div class="nav-help">
+                    <button type="button" class="btn btn-danger ml-lg-2">Need Help ?</button>
+                    <a href="#"><i class="fa fa-facebook-square ml-2" style="font-size:40px"></i></a>
+                </div>
+                
             </nav>
         </div>
 
-    </div>
+        <!-- Tour Carousel -->
+        <div class="container tour-carousel">
+            <div class="container tour-nav">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <a href="#"><img class="d-block w-100" src="/images/tour_pic.jpg" alt="First slide"></a>
+                  </div>
+                  <div class="carousel-item">
+                        <a href="#"><img class="d-block w-100" src="/images/tour_pic.jpg" alt="Second slide"></a>
+                  </div>
+                  <div class="carousel-item">
+                        <a href="#"><img class="d-block w-100" src="/images/tour_pic.jpg" alt="Thirt slide"></a>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+
+            <!--<table class="tour-btn">
+                <tr>
+                    <td>
+                    <p>GO TO TOURNAMENT</p>
+                    </td>
+                    <td>
+                    <i class="fa fa-angle-double-right" style="font-size:1.2rem"></i>    
+                    </td>
+                </tr>
+            </table>-->
+              
+        </div>
+
+        <!-- Video -->
+        <div class="video-play embed-responsive embed-responsive-16by9">
+            <iframe width="100%" height="100%" allow="autoplay" allowfullscreen class="embed-responsive-item w-100"
+            src="https://www.youtube.com/embed/Qjq_PVpq1ts?autoplay=1">
+            </iframe>  
+        </div>
+
+        <!-- Tournament -->
+        <div class="container pt-2">
+        <h3 class="h-secondary">Joint Tournament</h3>
+        <p>เกมต่างๆ ที่คุณเล่นประจำ ฝึกฝีมือแล้วมาร่วมรายการแข่งขันได้ทันที</p>
+        </div>
+        
+        <div class="container">
+            <div class="tournament">
+                <div class="tour-item px-2">
+                    <div class="tour-header pl-2 pt-1"><h5>PUBG HEAD HUNTER EVOLUTION</h5></div>
+                    <div class="tour-img"><img src="/images/496_1530608142_543x703.jpg" alt=""></div>
+                    <div class="tour-creater pt-2"><img src="/images/header_logo.png" alt=""><p>By DSZ</p></div>
+                </div>
+                <div class="tour-item px-2">
+                        <div class="tour-header pl-2 pt-1"><h5>Road to SEA Major 2018 : Street Fighter V AE Online Qualifier</h5></div>
+                        <div class="tour-img"><img src="/images/CMS2093190493_1534845515_SFV offline 285x192.png" alt=""></div>
+                        <div class="tour-creater pt-2"><img src="/images/header_logo.png" alt=""><p>By DSZ</p></div>
+                </div>
+                <div class="tour-item px-2">
+                        <div class="tour-header pl-2 pt-1"><h5>Road to SEA Major 2018 : Tekken 7 Offline Qualifier</h5></div>
+                        <div class="tour-img"><img src="/images/CMS119234506_1534845411_TK7 offline 285x192_re.png" alt=""></div>
+                        <div class="tour-creater pt-2"><img src="/images/header_logo.png" alt=""><p>By DSZ</p></div>
+                </div>
+                <div class="more-tour py-3"><button type="button" class="btn btn-primary">More Tournament</button></div> 
+                </div>
+            </div>
+        </div>
+
+        <!-- News -->
+        <div class="container pt-3">
+                <h3 class="h-secondary">อัพเดตข่าวสารล่าสุด!</h3>
+                <p>ESGN ช่วยค้นหาข้อมูล จากแหล่งข่าวในวงการเกมส์เมอร์ทั้งในและต่างประเทศที่เชื่อถือได้</p>
+            </div>
+                
+        <div class="container">
+                    <div class="news">
+                        <div class="news-item px-2">
+                            <div class="news-header pl-2 pt-1"><h5>[HOW TO] วิธีการสมัครทัวร์นาเม้นท์</h5></div>
+                            <div class="news-header news-view pt-1 pr-2"><i class="material-icons" style="font-size:1rem;">fiber_manual_record</i><p>999 view</p></div>
+                            <div class="news-information">
+                                <div class="news-img"><img src="/images/CMS284413048_1529303005_สมัครมัว.jpg" alt=""></div>
+                                <div class="news-detail pt-2 px-2"><p>[HOW TO] วิธีการสมัครทัวร์นาเม้นท์</p></div> 
+                                <button type="button" class="btn btn-primary">More</button>
+                            </div>
+                        </div>
+                        <div class="news-item px-2">
+                                <div class="news-header pl-2 pt-1"><h5>[HOW TO] วิธีการสมัครทัวร์นาเม้นท์</h5></div>
+                                <div class="news-header news-view pt-1 pr-2"><i class="material-icons" style="font-size:1rem;">fiber_manual_record</i><p>999 view</p></div>
+                                <div class="news-information">
+                                    <div class="news-img"><img src="/images/CMS284413048_1529303005_สมัครมัว.jpg" alt=""></div>
+                                    <div class="news-detail pt-2 px-2"><p>[HOW TO] วิธีการสมัครทัวร์นาเม้นท์</p></div> 
+                                    <button type="button" class="btn btn-primary">More</button>
+                                </div>
+                            </div>
+                            <div class="news-item px-2">
+                                    <div class="news-header pl-2 pt-1"><h5>[HOW TO] วิธีการสมัครทัวร์นาเม้นท์</h5></div>
+                                    <div class="news-header news-view pt-1 pr-2"><i class="material-icons" style="font-size:1rem;">fiber_manual_record</i><p>999 view</p></div>
+                                    <div class="news-information">
+                                        <div class="news-img"><img src="/images/CMS284413048_1529303005_สมัครมัว.jpg" alt=""></div>
+                                        <div class="news-detail pt-2 px-2"><p>[HOW TO] วิธีการสมัครทัวร์นาเม้นท์</p></div> 
+                                        <button type="button" class="btn btn-primary">More</button>
+                                    </div>
+                                </div>
+                        <div class="more-news py-3"><button type="button" class="btn btn-primary">More News</button></div> 
+                        </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="container footer footer-bg pt-2">
+            <div class="footer-esgn">
+            <img src="/images/header_logo.png" alt="" class="pb-2">
+            <p>Simplify the Esports tournament organization. No more docs, others page or website. Hosting an Esports tournament on ESGN is super easy and keep all related information in single place.</p>
+        </div>
+            <div class="nav-footer pb-3">
+              <h5>HOW TO</h5>
+                <li>Create ID</li>
+                <li>Create Team</li>   
+                <li>Joint Team</li>    
+                <li>View Tournament Info</li>    
+                <li>Match appointment</li>    
+            </div>
+            <div class="contact-footer pb-3">
+             <h5>FOLLOW US</h5>  
+                <a href="#"><i class="fa fa-facebook-square ml-2" style="font-size:40px"></i></a>
+            </div>
+        </div>
+
+        <div class="copyright-footer py-2">
+            <p>2018 ESGN Privacy Policy</p>
+            <p>App version: 1.4.4</p>
+        </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+    <script>
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+              if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+              } else {
+                document.getElementById("navbar").style.top = "-10rem";
+              }
+              prevScrollpos = currentScrollPos;
+            }
+            </script>
 </body>
 </html>
