@@ -6432,17 +6432,17 @@ a.text-dark:hover, a.text-dark:focus {
     align-items: baseline; }
   .news .news-item .news-img {
     grid-row: 1/3;
-    display: flex;
-    justify-content: center;
-    background-color: #212529; }
+    padding: 0;
+    margin: auto; }
     .news .news-item .news-img img {
-      height: 10rem;
+      height: auto;
       max-width: 100%; }
   .news .news-item .news-information {
     grid-column: 1/3;
     display: grid;
     grid-template-columns: 2fr 3fr;
-    grid-template-rows: 3fr 1fr; }
+    grid-template-rows: 3fr 1fr;
+    background-color: #212529; }
   .news .news-item .news-detail {
     display: flex;
     justify-content: baseline;
