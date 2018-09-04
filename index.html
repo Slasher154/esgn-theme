@@ -37,7 +37,7 @@
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Game
                             </a>
-                            <div class="dropdown-menu nav-bg" aria-labelledby="navbarDropdown">
+                            <div class="dropdown-menu nav-bg" aria-labelledby="navbarDropdown" data-spy="scroll">
                                 <a class="dropdown-item" href="#"><img src="/images/ROV-LOGO.png" alt=""> ROV</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#"><img src="/images/PUBG_logo.png" alt=""> PUBG</a>
@@ -79,58 +79,59 @@
         </div>
 
         <!-- Tour Carousel -->
-        <div class="container tour-carousel">
-            <div class="container tour-nav">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <a href="#"><img class="d-block w-100" src="/images/tour_pic.jpg" alt="First slide"></a>
-                  </div>
-                  <div class="carousel-item">
-                        <a href="#"><img class="d-block w-100" src="/images/tour_pic.jpg" alt="Second slide"></a>
-                  </div>
-                  <div class="carousel-item">
-                        <a href="#"><img class="d-block w-100" src="/images/tour_pic.jpg" alt="Thirt slide"></a>
-                  </div>
+
+        <div class="container">
+            <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="9000">
+                <div class="carousel-inner row w-100 mx-auto tour-carousel" role="listbox">
+                    <div class="carousel-item col-md-4 active">
+                        <img class="img-fluid mx-auto d-block" src="/images/tour_pic.jpg" alt="slide 1">
+                        <a href=""></a>
+                    </div>
+                    <div class="carousel-item col-md-4">
+                        <img class="img-fluid mx-auto d-block" src="/images/CMS85779689_1534934745_SFV offline 325x125_02(3).png" alt="slide 2">
+                    </div>
+                    <div class="carousel-item col-md-4">
+                        <img class="img-fluid mx-auto d-block" src="/images/CMS631668471_1534934719_TK7 offline 325x125_B01(2).png" alt="slide 3">
+                    </div>
+                    <div class="carousel-item col-md-4">
+                        <img class="img-fluid mx-auto d-block" src="/images/CMS1329650985_1534928895_325x125(1).jpg" alt="slide 4">
+                    </div>
+                    <div class="carousel-item col-md-4">
+                        <img class="img-fluid mx-auto d-block" src="/images/CMS631668471_1534934719_TK7 offline 325x125_B01(2).png" alt="slide 5">
+                    </div>
+                    <div class="carousel-item col-md-4">
+                        <img class="img-fluid mx-auto d-block" src="/images/CMS684533577_1534848982_SFV offline 325x125_B02.png" alt="slide 6">
+                    </div>
+                    <div class="carousel-item col-md-4">
+                        <img class="img-fluid mx-auto d-block" src="/images/CMS89866197_1534849136_TK7 offline 325x125_01(1).png" alt="slide 7">
+                    </div>
+                    <div class="carousel-item col-md-4">
+                        <img class="img-fluid mx-auto d-block" src="/images/CMS85779689_1534934745_SFV offline 325x125_02(3).png" alt="slide 7">
+                    </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
+                <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                    <i class="fa fa-chevron-left fa-lg text-muted"></i>
+                    <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
+                <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
+                    <i class="fa fa-chevron-right fa-lg text-muted"></i>
+                    <span class="sr-only">Next</span>
                 </a>
-              </div>
             </div>
-
-            <!--<table class="tour-btn">
-                <tr>
-                    <td>
-                    <p>GO TO TOURNAMENT</p>
-                    </td>
-                    <td>
-                    <i class="fa fa-angle-double-right" style="font-size:1.2rem"></i>    
-                    </td>
-                </tr>
-            </table>-->
-              
         </div>
-
+        
         <!-- Video -->
-        <div class="video-play embed-responsive embed-responsive-16by9 container">
+        <div class="container-fluid video-play">
+         <div class="embed-responsive embed-responsive-16by9 container">
             <iframe width="100%" height="100%" allow="autoplay" allowfullscreen class="embed-responsive-item w-100"
             src="https://www.youtube.com/embed/Qjq_PVpq1ts?autoplay=1">
             </iframe>  
+        </div>   
         </div>
+        
 
         <!-- Tournament -->
-        <div class="container pt-2">
+       <div class="container pt-2">
         <h3 class="h-secondary">Joint Tournament</h3>
         <p>เกมต่างๆ ที่คุณเล่นประจำ ฝึกฝีมือแล้วมาร่วมรายการแข่งขันได้ทันที</p>
         </div>
@@ -157,6 +158,8 @@
             </div>
         </div>
 
+          
+
         <!-- News -->
         <div class="container pt-3">
                 <h3 class="h-secondary">อัพเดตข่าวสารล่าสุด!</h3>
@@ -166,7 +169,7 @@
         <div class="container">
                     <div class="news">
                         <div class="news-item px-2">
-                            <div class="news-header pl-2 pt-1"><h5>[HOW TO] วิธีการสมัครทัวร์นาเม้นท์</h5></div>
+                            <div class="news-header news-title pl-2 pt-1"><h5>[HOW TO] วิธีการสมัครทัวร์นาเม้นท์</h5></div>
                             <div class="news-header news-view pt-1 pr-2"><i class="material-icons" style="font-size:1rem;">fiber_manual_record</i><p>999 view</p></div>
                             <div class="news-information">
                                 <div class="news-img"><img src="/images/CMS284413048_1529303005_สมัครมัว.jpg" alt=""></div>
@@ -175,7 +178,7 @@
                             </div>
                         </div>
                         <div class="news-item px-2">
-                                <div class="news-header pl-2 pt-1"><h5>[HOW TO] วิธีการสมัครทัวร์นาเม้นท์</h5></div>
+                                <div class="news-header news-title pl-2 pt-1"><h5>[HOW TO] วิธีการสมัครทัวร์นาเม้นท์</h5></div>
                                 <div class="news-header news-view pt-1 pr-2"><i class="material-icons" style="font-size:1rem;">fiber_manual_record</i><p>999 view</p></div>
                                 <div class="news-information">
                                     <div class="news-img"><img src="/images/CMS284413048_1529303005_สมัครมัว.jpg" alt=""></div>
@@ -184,7 +187,7 @@
                                 </div>
                             </div>
                             <div class="news-item px-2">
-                                    <div class="news-header pl-2 pt-1"><h5>[HOW TO] วิธีการสมัครทัวร์นาเม้นท์</h5></div>
+                                    <div class="news-header news-title pl-2 pt-1"><h5>[HOW TO] วิธีการสมัครทัวร์นาเม้นท์</h5></div>
                                     <div class="news-header news-view pt-1 pr-2"><i class="material-icons" style="font-size:1rem;">fiber_manual_record</i><p>999 view</p></div>
                                     <div class="news-information">
                                         <div class="news-img"><img src="/images/CMS284413048_1529303005_สมัครมัว.jpg" alt=""></div>
@@ -236,6 +239,28 @@
               }
               prevScrollpos = currentScrollPos;
             }
-            </script>
+            </script>    
+  <script>
+  $('#recipeCarousel').carousel({
+    interval: 10000
+  })
+  
+  $('.carousel .carousel-item').each(function(){
+      var next = $(this).next();
+      if (!next.length) {
+      next = $(this).siblings(':first');
+      }
+      next.children(':first-child').clone().appendTo($(this));
+      
+      for (var i=0;i<1;i++) {
+          next=next.next();
+          if (!next.length) {
+              next = $(this).siblings(':first');
+            }
+          
+          next.children(':first-child').clone().appendTo($(this));
+        }
+  });
+  </script>  
 </body>
 </html>

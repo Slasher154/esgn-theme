@@ -6355,7 +6355,7 @@ a.text-dark:hover, a.text-dark:focus {
   z-index: 100; }
 
 #navbar {
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   display: block;
@@ -6369,28 +6369,29 @@ a.text-dark:hover, a.text-dark:focus {
     width: auto; }
 
 .tour-carousel {
-  display: grid;
-  grid-template-columns: auto auto;
-  padding-top: 10rem;
-  padding-bottom: 0.7rem;
-  /*
-  table{
-    //width: 1rem;
-  }
+  justify-content: center; }
 
-  p{
-    transform: rotate(90deg);
-    //position: relative;
-   } 
+.carousel-inner .carousel-item.active, .carousel-inner .carousel-item-next, .carousel-inner .carousel-item-prev {
+  justify-content: center; }
 
- i{
-  transform: rotate(90deg);
- // position: absolute;
- } */ }
+.carousel-inner .carousel-item.active, .carousel-inner .carousel-item-next, .carousel-inner .carousel-item-prev {
+  display: flex; }
+
+.carousel-inner .carousel-item-right.active,
+.carousel-inner .carousel-item-next {
+  transition: transform .1s ease; }
+
+.carousel-inner .carousel-item-left.active,
+.carousel-inner .carousel-item-prev {
+  transition: transform .1s ease; }
+
+.d-block {
+  padding: 1rem; }
 
 .video-play {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  background-color: #000; }
 
 .tournament {
   background: #383b40; }
@@ -6400,7 +6401,9 @@ a.text-dark:hover, a.text-dark:focus {
     grid-template-rows: repeat(3, auto);
     padding-top: 1rem; }
     .tournament .tour-item .tour-header {
-      background-color: #a61e23; }
+      background-color: #a61e23;
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem; }
     .tournament .tour-item .tour-img {
       display: flex;
       justify-content: center;
@@ -6411,7 +6414,9 @@ a.text-dark:hover, a.text-dark:focus {
     .tournament .tour-item .tour-creater {
       display: flex;
       justify-content: baseline;
-      background-color: #000; }
+      background-color: #000;
+      border-bottom-left-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem; }
       .tournament .tour-item .tour-creater img {
         width: auto;
         max-height: 1.5rem;
@@ -6428,11 +6433,14 @@ a.text-dark:hover, a.text-dark:focus {
   padding-top: 1rem; }
   .news .news-item .news-header {
     background-color: #a61e23; }
+  .news .news-item .news-title {
+    border-top-left-radius: 0.5rem; }
   .news .news-item .news-view {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: baseline; }
+    align-items: baseline;
+    border-top-right-radius: 0.5rem; }
   .news .news-item .news-img {
     grid-row: 1/3;
     padding: 0;
@@ -6445,7 +6453,9 @@ a.text-dark:hover, a.text-dark:focus {
     display: grid;
     grid-template-columns: 2fr 3fr;
     grid-template-rows: 3fr 1fr;
-    background-color: #212529; }
+    background-color: #212529;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem; }
   .news .news-item .news-detail {
     display: flex;
     justify-content: baseline;
@@ -6523,9 +6533,3 @@ a.text-dark:hover, a.text-dark:focus {
     grid-gap: 3rem;
     padding-top: 2rem !important;
     padding-bottom: 5rem !important; } }
-
-/*
-@media (min-width:1390px){
-  .video-play{margin-left: auto; margin-right: auto;}
-  .embed-responsive{width: 90% !important;}
-}*/
