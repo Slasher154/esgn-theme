@@ -87,14 +87,6 @@ $bg:#383b40;
   align-items: center;
 }
 
-.collapse{
-max-height: 30rem;
-}
-.in {
-  display: block;
-  overflow-y: auto;
-}
-
 .fa:hover{
 color: $blue;
 border-color: $blue;
@@ -300,13 +292,30 @@ transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-
       width: 100%;
     }
   }
+
+  .collapse{
+    max-height: 30rem;
+    }
+    .in {
+      display: block;
+      overflow-y: auto;
+    }
 }
 
-@media (min-width:767px) and (max-width:1023px){
+@media (min-width:767px) and (max-width:991px){
 
   #navbar{
     position: initial !important;
   }
+
+  .collapse{
+  max-height: 30rem;
+}
+.in {
+  display: block;
+  overflow-y: auto;
+
+}
 
   .tournament{
     display: grid;
@@ -339,7 +348,7 @@ transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-
   }
 }
 
-@media (min-width:1024px){
+@media (min-width:992px){
 
   #navbar{
     position: initial !important;

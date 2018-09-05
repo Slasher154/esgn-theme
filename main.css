@@ -6344,13 +6344,6 @@ a.text-dark:hover, a.text-dark:focus {
   flex-wrap: wrap;
   align-items: center; }
 
-.collapse {
-  max-height: 30rem; }
-
-.in {
-  display: block;
-  overflow-y: auto; }
-
 .fa:hover {
   color: #0b5a9c;
   border-color: #0b5a9c;
@@ -6518,11 +6511,21 @@ a.text-dark:hover, a.text-dark:focus {
 
 @media (max-width: 374px) {
   .nav-login .btn {
-    width: 100%; } }
+    width: 100%; }
+  .collapse {
+    max-height: 30rem; }
+  .in {
+    display: block;
+    overflow-y: auto; } }
 
-@media (min-width: 767px) and (max-width: 1023px) {
+@media (min-width: 767px) and (max-width: 991px) {
   #navbar {
     position: initial !important; }
+  .collapse {
+    max-height: 30rem; }
+  .in {
+    display: block;
+    overflow-y: auto; }
   .tournament {
     display: grid;
     grid-template-columns: repeat(2, auto); }
@@ -6543,7 +6546,7 @@ a.text-dark:hover, a.text-dark:focus {
     .footer .nav-footer, .footer .contact-footer {
       padding-top: 2rem; } }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   #navbar {
     position: initial !important; }
   .tournament {
