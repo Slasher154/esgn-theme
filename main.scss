@@ -87,6 +87,14 @@ $bg:#383b40;
   align-items: center;
 }
 
+.collapse{
+max-height: 30rem;
+}
+.in {
+  display: block;
+  overflow-y: auto;
+}
+
 .fa:hover{
 color: $blue;
 border-color: $blue;
@@ -164,6 +172,14 @@ transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-
       background-color: $secondary;
       border-top-left-radius: 0.5rem;
       border-top-right-radius: 0.5rem;
+      height: 4rem;
+      h5{
+        overflow: hidden;
+	      text-overflow: ellipsis;
+	      -webkit-line-clamp: 2;
+	      display: -webkit-box;
+	      -webkit-box-orient: vertical;
+      }
     }
     .tour-img{
       display: flex;
@@ -197,9 +213,17 @@ transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-
     padding-top: 1rem;
     .news-header{
       background-color: $secondary;
+      height: 4rem;
     }
     .news-title{
       border-top-left-radius: 0.5rem;
+      h5{
+        overflow: hidden;
+	      text-overflow: ellipsis;
+	      -webkit-line-clamp: 2;
+	      display: -webkit-box;
+	      -webkit-box-orient: vertical;
+      }
     }
     .news-view{
       display: flex;
@@ -228,6 +252,13 @@ transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-
       justify-content: baseline;
       color:$dark; 
       background-color: $light;
+      p{
+        overflow: hidden;
+	      text-overflow: ellipsis;
+	      -webkit-line-clamp: 4;
+	      display: -webkit-box;
+	      -webkit-box-orient: vertical;
+      }
     }
   }
   .more-news{
@@ -273,6 +304,10 @@ transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-
 
 @media (min-width:767px) and (max-width:1023px){
 
+  #navbar{
+    position: initial !important;
+  }
+
   .tournament{
     display: grid;
     grid-template-columns: repeat(2,auto);
@@ -305,6 +340,10 @@ transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-
 }
 
 @media (min-width:1024px){
+
+  #navbar{
+    position: initial !important;
+  }
 
   .tournament{
     display: grid;
