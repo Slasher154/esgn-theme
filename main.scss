@@ -67,7 +67,6 @@ a:hover{
 }
 
 
-
 //@media (max-width:767px){
 
 /////////////////////// header ///////////////////////
@@ -88,6 +87,11 @@ a:hover{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  .fa{ background-color: #0b5a9c;
+    padding-top: 0.5rem;
+    padding-left: 1.1rem;
+    padding-right: 0.3rem;
+    border-radius: 0.3rem;}
 }
 
 .fa:hover{
@@ -119,11 +123,14 @@ transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-
 }
 /////////////////////// tour-carousel ///////////////////////
 
-.tour-carousel{
-  justify-content: center;
+.carousel{
+  .fa{
+    background-color: white;
+    padding: 0.5rem;
+  }
 }
 
-.carousel-inner .carousel-item.active, .carousel-inner .carousel-item-next, .carousel-inner .carousel-item-prev {
+.tour-carousel, .carousel-inner .carousel-item.active, .carousel-inner .carousel-item-next, .carousel-inner .carousel-item-prev {
   justify-content: center;
 }
 
@@ -279,7 +286,11 @@ transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-
 
 .nav-footer,.contact-footer{
   li{list-style: none;}
-  .fa{color: #0b5a9c;}
+  .fa{ background-color: #0b5a9c;
+    padding-top: 0.5rem;
+    padding-left: 1.1rem;
+    padding-right: 0.3rem;
+    border-radius: 0.3rem;}
 }
 
 .copyright-footer{

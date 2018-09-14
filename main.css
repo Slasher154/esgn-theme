@@ -6346,6 +6346,12 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   align-items: center; }
+  .nav-help .fa {
+    background-color: #0b5a9c;
+    padding-top: 0.5rem;
+    padding-left: 1.1rem;
+    padding-right: 0.3rem;
+    border-radius: 0.3rem; }
 
 .fa:hover {
   color: #004c70;
@@ -6371,13 +6377,16 @@ a:hover {
     height: 1rem;
     width: auto; }
 
-.tour-carousel {
+.carousel .fa {
+  background-color: white;
+  padding: 0.5rem; }
+
+.tour-carousel, .carousel-inner .carousel-item.active, .carousel-inner .carousel-item-next, .carousel-inner .carousel-item-prev {
   justify-content: center; }
 
-.carousel-inner .carousel-item.active, .carousel-inner .carousel-item-next, .carousel-inner .carousel-item-prev {
-  justify-content: center; }
-
-.carousel-inner .carousel-item.active, .carousel-inner .carousel-item-next, .carousel-inner .carousel-item-prev {
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
   display: flex; }
 
 .carousel-inner .carousel-item-right.active,
@@ -6506,7 +6515,11 @@ a:hover {
   list-style: none; }
 
 .nav-footer .fa, .contact-footer .fa {
-  color: #0b5a9c; }
+  background-color: #0b5a9c;
+  padding-top: 0.5rem;
+  padding-left: 1.1rem;
+  padding-right: 0.3rem;
+  border-radius: 0.3rem; }
 
 .copyright-footer {
   background-color: #181818;
