@@ -6505,7 +6505,7 @@ a:hover {
 .nav-footer li, .contact-footer li {
   list-style: none; }
 
-.nav-footer a, .contact-footer a {
+.nav-footer .fa, .contact-footer .fa {
   color: #0b5a9c; }
 
 .copyright-footer {
