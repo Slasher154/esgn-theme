@@ -6332,6 +6332,9 @@ a.text-dark:hover, a.text-dark:focus {
 a:hover {
   text-decoration: none; }
 
+.position-fix {
+  position: fixed !important; }
+
 .nav-bg {
   background-color: #383b40;
   box-shadow: 0 0.25rem 0.125rem rgba(0, 0, 0, 0.25); }
