@@ -38,6 +38,8 @@ $breadcrumb-divider-color: $body-color;
 $close-color: $white;
 $info:#B3001B;
 $bg:#383b40;
+$dropdown-link-hover-bg:$primary;
+$dropdown-link-hover-color:$white;
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
@@ -156,6 +158,11 @@ a:hover{
     padding: 0.8rem;
   }
 
+  .dropdown-item:hover{
+    background-color: $primary;
+    color: $white;
+  }
+
   .user-money{
     background: $black;
     a{justify-content: flex-end;}
@@ -163,7 +170,7 @@ a:hover{
   }
 
   .last-dropdown-item{
-    background-color: #f00018;
+    //background-color: #f00018;
     border-bottom-left-radius: 8%;
     border-bottom-right-radius: 8%;
   }
@@ -171,15 +178,19 @@ a:hover{
 }
 
 .nav-help{
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns:repeat(2,auto);
+  grid-gap: 0.5rem;
   align-items: center;
-  .fa{ background-color: #0b5a9c;
-    padding-top: 0.5rem;
-    padding-left: 1.1rem;
-    padding-right: 0.3rem;
-    border-radius: 0.3rem;}
+  
+  option{background-color: $bg;}
+  option:hover{background: $primary;}
 }
+.fa{ background-color: #0b5a9c;
+  padding-top: 0.5rem;
+  padding-left: 1.1rem;
+  padding-right: 0.3rem;
+  border-radius: 0.3rem;}
 
 .fa:hover{
 color: $blue;
