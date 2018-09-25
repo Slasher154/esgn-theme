@@ -1,0 +1,433 @@
+$enable-caret: true;
+$red: #F00018;
+$blue: #174259;
+$primary: $red;
+$secondary: $blue;
+$yellow: #ebd645;
+$orange: #f7971f;
+$green: #83d400;
+$black:#181818;
+$body-bg: #2B3036;
+$white: #fff;
+$body-color: $white;
+$input-bg: rgba(255,255,255,.1);
+$input-color: $white;
+$input-border-color: rgba(255,255,255,.25);
+$input-group-addon-bg: $input-bg;
+$pink: #ff7190;
+$danger: $black;
+$nav-link-padding-x: 1rem;
+$pagination-bg: rgba(0,0,0,.25);
+$link-color: $white;
+$pagination-active-bg: $red;
+$pagination-border-width: 0px;
+$gray-700: #495057;
+$pagination-hover-bg: $gray-700;
+$card-border-width: 0px;
+$card-bg: rgba(0,0,0,.25);
+$list-group-bg: rgba(0,0,0,.25);
+$component-active-bg: $red;
+$modal-content-bg: #191a27;
+$gray-300: #dee2e6;
+$modal-content-border-color: $gray-300;
+$modal-header-border-width: 0px;
+$progress-bg: rgba(0,0,0,.25);
+$breadcrumb-bg: transparent;
+$breadcrumb-active-color: $yellow;
+$breadcrumb-divider-color: $body-color;
+$close-color: $white;
+$info:#B3001B;
+$bg:#383b40;
+$enable-caret: true;
+$red: #F00018;
+$blue: #174259;
+$primary: $red;
+$secondary: $blue;
+$yellow: #ebd645;
+$orange: #f7971f;
+$green: #83d400;
+$black:#181818;
+$body-bg: #2B3036;
+$white: #fff;
+$body-color: $white;
+$input-bg: rgba(255,255,255,.1);
+$input-color: $white;
+$input-border-color: rgba(255,255,255,.25);
+$input-group-addon-bg: $input-bg;
+$pink: #ff7190;
+$danger: $black;
+$nav-link-padding-x: 1rem;
+$pagination-bg: rgba(0,0,0,.25);
+$link-color: $white;
+$pagination-active-bg: $red;
+$pagination-border-width: 0px;
+$gray-700: #495057;
+$pagination-hover-bg: $gray-700;
+$card-border-width: 0px;
+$card-bg: rgba(0,0,0,.25);
+$list-group-bg: rgba(0,0,0,.25);
+$component-active-bg: $red;
+$modal-content-bg: #191a27;
+$gray-300: #dee2e6;
+$modal-content-border-color: $gray-300;
+$modal-header-border-width: 0px;
+$progress-bg: rgba(0,0,0,.25);
+$breadcrumb-bg: transparent;
+$breadcrumb-active-color: $yellow;
+$breadcrumb-divider-color: $body-color;
+$close-color: $white;
+$info:#B3001B;
+$bg:#383b40;
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// Our custom style
+p{opacity: 0.7;}
+
+.text-truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.h-primary,.primary{
+  color: $primary;
+}
+
+.h-secondary,.secondary{
+  color: $secondary;
+}
+
+.material-icons{
+  font-size: 1rem;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+.position-fix{
+ position: fixed !important;
+}
+
+
+
+//@media (max-width:767px){
+
+/////////////////////// Tour-Cover ////////////////////
+
+.tour-cover{
+  h1{    border-left: solid 1rem $primary;
+    padding-left: 0.5rem;
+  //border-bottom:solid 0.5rem $secondary; 
+  }
+}
+
+/////////////////////// nav-tab ///////////////////////
+.nav-bg {
+  background-color: #383b40;
+  box-shadow: 0 0.25rem 0.125rem rgba(0,0,0,.25);
+}
+
+.nav-pills{
+  text-align: center;
+  align-items: center;
+  border-bottom: solid;
+  padding-top: 1rem;
+  a{background-color: $black;}
+  .nav-link{
+    border-radius: 0;
+    padding: 0.5rem 0.5rem;
+  }
+}
+
+.tab-pane .container{padding: 0;}
+
+///////////////////// tournament-content in nav-tab ////////////////////
+
+.tournament-content{
+  background-color: $bg;
+
+  .pagination{
+    margin: 0;
+    padding-top: 0.5rem;
+    .page-item{padding-right: 0.3rem;}
+  }
+}
+.tour-item{
+      display: grid;
+      grid-template-columns: repeat(2,auto);
+
+      .tour-header,.tour-creater,.tour-detail{grid-column: 1/3;}
+  
+      .tour-header,.tour-header-main{
+       // background-color: $secondary;
+        h5{
+          overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 2;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+        }
+      }
+  
+      .tour-creater,.tour-creater-main{
+        display: flex;
+        //background-color: $secondary;
+        p{margin-bottom: 0.5rem;}
+        img{width:auto; max-height: 1.5rem; padding-left: 0.5rem; padding-right: 0.7rem;}
+      }
+      .tour-img{
+        min-width: 7rem;
+        padding: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{width: 100%; max-width: 15rem;}
+      }
+  
+      .tour-status{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        padding-bottom: 0.5rem;
+        .status{
+          display: flex;
+          flex-flow: column;
+          margin: 0.5rem;
+          .time{
+            display: grid;
+            grid-template-columns: repeat(2,auto);
+            background: $black;
+            border-top-left-radius:0.5rem; 
+            border-top-right-radius:0.5rem; 
+            h5{    
+              text-align: center;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              padding: 0.5rem;
+              margin-top: 0;
+              margin-bottom: 0;
+              border-right: 1px solid $info;}
+            hr{margin: 0; border-color: $info;}
+            .team-count{
+              padding: 0.5rem;
+              text-align: center;}
+          }
+        }
+        
+        .btn{
+          border-radius:0; 
+        }
+        .btn-success{
+          border-bottom-left-radius:0.5rem; 
+          border-bottom-right-radius:0.5rem; 
+        }
+      }
+  
+      .tour-detail{
+        p{
+          background-color: $black;
+          overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 3;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        }
+      }
+}
+
+.pagination{
+  .page-link:hover{
+  background-color: $primary;
+}}
+
+///////////////////// tournament-content in nav-tab ////////////////////
+
+.tournament-main{
+  //background-color: $bg;
+  .tour-header-main,.tour-creater-main,.tour-img,.tour-detail,.tour-status{
+    grid-column: 1/3;
+  }
+  .tour-header-main,.tour-creater-main{
+    background-color: $info;
+  }
+  .tour-header-main{
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+  .tour-img{
+    img{width: auto;
+    height: 100%;
+    max-height: 15rem;}}
+
+  .tour-img,.tour-status,.tour-detail{
+    background-color: $gray-900;
+  }
+
+  .tour-status{padding: 0; }
+
+  .tour-detail{
+    p{
+    color: $yellow;
+    background-color: unset;
+    opacity: 1;
+    margin: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    }
+  }
+
+  h4{border-left: solid 1rem $primary;
+    padding-left: 0.5rem;}
+
+  form{
+    flex-flow: initial;
+  }
+
+  .page-count{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    h5{
+      display: inline;
+      background-color: $info;
+      padding: 0.5rem;}
+  }
+}
+
+///////////////////////// media query /////////////////////////
+
+
+/// iphone 5 and down ///
+
+@media (max-width:374px){
+  .nav-pills{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+  }
+  .tour-item {
+      grid-template-columns: auto !important;
+
+      .tour-img,.tour-status{grid-column: 1/3;}
+
+      .tour-img {
+        justify-content: center;
+       img {
+          width: auto;
+          height: 100%;
+          max-height: 15rem;
+      }
+      }
+  }
+  .tournament-content{
+    .tour-status{padding-left: 0.5rem;}
+  }
+}
+
+/// iphone X to iphone 6 ///
+
+@media (min-width:375px) and (max-width:766px){
+
+}
+
+/// ipad ///
+
+@media (min-width:767px) and (max-width:991px){
+  .tour-item {
+    grid-template-columns: repeat(2,1fr);
+      .tour-img {
+        justify-content: center;
+        grid-column: 1/3;
+        img {
+          width: auto;
+          height: 100%;
+          max-height: 15rem;
+      }
+    }
+  }
+  .tournament-content{
+    .tour-status{
+      padding-left: 0.5rem;
+      grid-column: 2/3;
+    }
+    .tour-detail{
+      grid-column: 1/2;
+      grid-row: 4/5;
+      padding: 0.5rem 0rem;
+      p{
+      border-radius: 0;
+      -webkit-line-clamp: inherit;
+      }
+    }
+  }
+  .tournament-main{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-gap:1rem; 
+    h3{grid-column: 1/3;}
+    form{grid-column: 1/2;}
+    .page-pagination{
+      grid-column: 1/3;
+    }
+    .page-count{justify-content: flex-end;}
+  }
+}
+
+/// ipad pro to desktop ///
+
+@media (min-width:992px){
+  .tour-item {
+    .tour-info{
+      grid-template-columns: auto !important;
+      .tour-img {
+        justify-content: center;
+        img {
+          width: auto;
+          height: 100%;
+          max-height: 15rem;
+      }
+      }
+    }
+  }
+  .tournament-content{
+    .tour-item {
+      grid-template-columns: repeat(3,auto);
+
+      .tour-img{
+        grid-column: 1;
+      }
+
+      .tour-status{
+        //padding-left: 0.5rem;
+        grid-column: 3;
+      }
+      .tour-detail{
+        grid-column: 2;
+        grid-row: 3;
+        padding: 0.5rem 0rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+        border-radius: 0;
+        -webkit-line-clamp: inherit;
+        }
+      }
+    }
+  }
+  .tournament-main{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-gap:1rem;
+    h3{grid-column: 1/4;} 
+    form{grid-column: 1/3;}
+    .page-pagination{
+      grid-column: 1/4;
+    }
+    .page-count{justify-content: flex-end;}
+  }
+}

@@ -1,0 +1,314 @@
+$enable-caret: true;
+$red: #F00018;
+$blue: #174259;
+$primary: $red;
+$secondary: $blue;
+$yellow: #ebd645;
+$orange: #f7971f;
+$green: #83d400;
+$black:#181818;
+$body-bg: #2B3036;
+$white: #fff;
+$body-color: $white;
+$input-bg: rgba(255,255,255,.1);
+$input-color: $white;
+$input-border-color: rgba(255,255,255,.25);
+$input-group-addon-bg: $input-bg;
+$pink: #ff7190;
+$danger: $black;
+$nav-link-padding-x: 1rem;
+$pagination-bg: rgba(0,0,0,.25);
+$link-color: $white;
+$pagination-active-bg: $red;
+$pagination-border-width: 0px;
+$gray-700: #495057;
+$pagination-hover-bg: $gray-700;
+$card-border-width: 0px;
+$card-bg: rgba(0,0,0,.25);
+$list-group-bg: rgba(0,0,0,.25);
+$component-active-bg: $red;
+$modal-content-bg: #191a27;
+$gray-300: #dee2e6;
+$modal-content-border-color: $gray-300;
+$modal-header-border-width: 0px;
+$progress-bg: rgba(0,0,0,.25);
+$breadcrumb-bg: transparent;
+$breadcrumb-active-color: $yellow;
+$breadcrumb-divider-color: $body-color;
+$close-color: $white;
+$info:#B3001B;
+$bg:#383b40;
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// Our custom style
+p{opacity: 0.7;}
+
+.text-truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.h-primary,.primary{
+  color: $primary;
+}
+
+.h-secondary,.secondary{
+  color: $secondary;
+}
+
+.material-icons{
+  font-size: 1rem;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+.position-fix{
+ position: fixed !important;
+}
+
+
+//@media (max-width:767px){
+
+/////////////////////// Tour-Cover ////////////////////
+
+.tour-cover{
+  h1{    border-left: solid 1rem $primary;
+    padding-left: 0.5rem;
+  //border-bottom:solid 0.5rem $secondary; 
+  }
+}
+
+///////////////////// tournament-content in nav-tab ////////////////////
+
+.tournament-content{
+  background-color: $bg;
+
+  .pagination{
+    margin: 0;
+    padding-top: 0.5rem;
+    .page-item{padding-right: 0.3rem;}
+  }
+}
+.tour-item{
+      display: grid;
+      grid-template-columns: repeat(2,auto);
+
+      .tour-header,.tour-creater,.tour-detail{grid-column: 1/3;}
+  
+      .tour-header,.tour-header-main{
+       // background-color: $secondary;
+        h5{
+          overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 2;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+        }
+      }
+  
+      .tour-creater,.tour-creater-main{
+        display: flex;
+        //background-color: $secondary;
+        p{margin-bottom: 0.5rem;}
+        img{width:auto; max-height: 1.5rem; padding-left: 0.5rem; padding-right: 0.7rem;}
+      }
+      .tour-img{
+        min-width: 7rem;
+        padding: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-column: 1/3;
+        img{width: auto;
+          height: 100%;
+          max-height: 15rem;}
+      }
+  
+      .tour-status{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        padding-bottom: 0.5rem;
+        grid-column: 1/3;
+        .status{
+          display: flex;
+          flex-flow: column;
+          margin: 0.5rem;
+          .time{
+            display: grid;
+            grid-template-columns: repeat(2,auto);
+            background: $black;
+            border-top-left-radius:0.5rem; 
+            border-top-right-radius:0.5rem; 
+            h5{    
+              text-align: center;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              padding: 0.5rem;
+              margin-top: 0;
+              margin-bottom: 0;
+              border-right: 1px solid $info;}
+            hr{margin: 0; border-color: $info;}
+            .team-count{
+              padding: 0.5rem;
+              text-align: center;}
+          }
+        }
+        
+        .btn{
+          border-radius:0; 
+        }
+        .btn-success{
+          border-bottom-left-radius:0.5rem; 
+          border-bottom-right-radius:0.5rem; 
+        }
+      }
+  
+    }
+        .tour-detail{
+          h4{border-left: solid 1rem $primary;
+            padding-left: 0.5rem;
+            border-bottom: $white solid;}
+        }
+
+
+/////////////////////// nav-tab ///////////////////////
+.nav-bg {
+  //background-color: #383b40;
+  box-shadow: 0 0.25rem 0.125rem rgba(0,0,0,.25);
+}
+
+.nav-pills{
+  text-align: center;
+  align-items: center;
+  border-bottom: solid;
+  padding-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  a{background-color: $black;}
+  .nav-link{
+    border-radius: 0;
+    padding: 1rem 0.5rem;
+  }
+}
+
+.tab-content{background-color: #383b40;}
+
+.wiget-header{
+  .collapsible {
+    cursor: pointer;
+  }
+  
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  .active:after {
+    content: "\2212";
+  }
+}
+
+.content {
+  display: none;
+  overflow: hidden;
+}
+
+.tab-pane .container{padding: 0;}
+
+///////////////////////// media query /////////////////////////
+
+
+/// iphone 5 and down ///
+
+@media (max-width:374px){
+  .nav-pills{
+    grid-template-columns: repeat(2,auto);
+  }
+  .tour-item {
+      grid-template-columns: auto !important;
+
+      .tour-img,.tour-status{grid-column: 1/3;}
+
+      .tour-img {
+        justify-content: center;
+       img {
+          width: auto;
+          height: 100%;
+          max-height: 15rem;
+      }
+      }
+  }
+  .tournament-content{
+    .tour-status{padding-left: 0.5rem;}
+  }
+}
+
+/// iphone X to iphone 6 ///
+
+@media (min-width:375px) and (max-width:766px){
+
+}
+
+/// ipad ///
+
+@media (min-width:767px) and (max-width:991px){
+ .nav-pills{
+   display: flex;
+ }
+  .tour-item {
+    grid-template-columns: repeat(2,1fr);
+    .tour-header,.tour-creater{grid-column: 2/3;}
+      .tour-img {
+        justify-content: center;
+        grid-column: 1/2;
+        grid-row: 1/4;
+        img {
+          width: auto;
+          height: 100%;
+          max-height: 15rem;
+      }
+    }
+  }
+  .tournament-content{
+    .tour-status{
+      padding-left: 0.5rem;
+      grid-column: 2/3;
+    }
+  }
+}
+
+/// ipad pro to desktop ///
+
+@media (min-width:992px){
+  .nav-pills{
+    display: flex;
+  }
+    .tournament-content{
+      .tour-item {
+        grid-template-columns: repeat(3,auto);
+        .tour-header,.tour-creater{grid-column: 3/4;}
+        .tour-img{
+          justify-content: center;
+          grid-column: 1/3;
+          grid-row: 1/5;
+          img {
+          width: auto;
+          height: 100%;
+          max-height: 15rem;
+          }
+      }
+
+      .tour-status{
+        grid-column: 3;
+      }
+    }
+  }
+}
