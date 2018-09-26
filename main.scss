@@ -1,6 +1,6 @@
 $enable-caret: true;
 $red: #F00018;
-$blue: #174259;
+$blue: #002642;
 $primary: $red;
 $secondary: $blue;
 $yellow: #ebd645;
@@ -15,7 +15,7 @@ $input-color: $white;
 $input-border-color: rgba(255,255,255,.25);
 $input-group-addon-bg: $input-bg;
 $pink: #ff7190;
-$danger: $black;
+$danger: $orange;
 $nav-link-padding-x: 1rem;
 $pagination-bg: rgba(0,0,0,.25);
 $link-color: $white;
@@ -40,6 +40,9 @@ $info:#B3001B;
 $bg:#383b40;
 $dropdown-link-hover-bg:$primary;
 $dropdown-link-hover-color:$white;
+$component-active-bg:$primary;
+$input-btn-focus-color:rgba($secondary, .25);
+$input-focus-border-color:lighten($secondary, 25%);
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
@@ -151,7 +154,7 @@ a:hover{
     img{width: 100%; border-radius: 50%;}
   }
   .user-name{padding-left: 0.7rem; padding-right: 0.2rem; margin: 0;}
-  
+
   .dropdown-login{
   padding: 0;
   .dropdown-item{
@@ -175,6 +178,11 @@ a:hover{
     border-bottom-right-radius: 8%;
   }
 }
+}
+
+.dropdown-game{
+  border: solid $primary;
+  border-radius: 5rem;
 }
 
 .nav-help{

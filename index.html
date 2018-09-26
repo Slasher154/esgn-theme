@@ -87,11 +87,13 @@
                         <option value="10">Hero of Newearth</option>
                         <option value="11">PlayStation</option>
                       </select>-->
-                    <li class="nav-item dropdown">
+                    <li class="dropdown dropdown-game d-block p-0">
                             <a class="btn dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Game
                             </a>
                             <div class="dropdown-menu nav-bg" aria-labelledby="navbarDropdown" >
+                                <a class="dropdown-item" href="#"><img src="/images/header_logo.png" alt=""> ALL</a>
+                                <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#"><img src="/images/ROV-LOGO.png" alt=""> ROV</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#"><img src="/images/PUBG_logo.png" alt=""> PUBG</a>
@@ -317,6 +319,13 @@
     }
 });
     </script>-->
+    <script>$(".dropdown-menu a").click(function(){
+            var selText = $(this).text();
+            $(this).parents('.dropdown').find('.dropdown-toggle').html(selText+' <span class="caret"></span>');
+            
+            //optional store val in hidden input
+            $('#selVal').val(selText);
+          });</script>
     <script src="http://mynameismatthieu.com/WOW/dist/wow.min.js"></script>
     <script>
         new WOW().init();
