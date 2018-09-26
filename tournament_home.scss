@@ -82,6 +82,7 @@ $bg:#383b40;
 @import "node_modules/bootstrap/scss/bootstrap";
 
 // Our custom style
+*{ font-family: 'Kanit',sans-serif;}
 p{opacity: 0.7;}
 
 .text-truncate {
@@ -143,7 +144,7 @@ a:hover{
   }
 }
 
-.tab-pane .container{padding: 0;}
+.tab-pane .container{padding: 1rem; background-color: $bg;}
 
 ///////////////////// tournament-content in nav-tab ////////////////////
 
@@ -279,7 +280,8 @@ a:hover{
 
   .tour-detail{
     p{
-    color: $yellow;
+    color: $orange;
+    text-align: center;
     background-color: unset;
     opacity: 1;
     margin: 0;
