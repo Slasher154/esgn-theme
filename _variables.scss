@@ -15,7 +15,7 @@ $input-color: $white;
 $input-border-color: rgba(255,255,255,.25);
 $input-group-addon-bg: $input-bg;
 $pink: #ff7190;
-$danger: $black;
+$danger: $orange;
 $nav-link-padding-x: 1rem;
 $pagination-bg: rgba(0,0,0,.25);
 $link-color: $white;
@@ -38,6 +38,9 @@ $breadcrumb-divider-color: $body-color;
 $close-color: $white;
 $info:#B3001B;
 $bg:#383b40;
+$dropdown-link-hover-bg:$primary;
+$dropdown-link-hover-color:$white;
+$component-active-bg:$secondary;
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
