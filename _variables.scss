@@ -40,7 +40,9 @@ $info:#B3001B;
 $bg:#383b40;
 $dropdown-link-hover-bg:$primary;
 $dropdown-link-hover-color:$white;
-$component-active-bg:$secondary;
+$component-active-bg:$primary;
+$input-btn-focus-color:rgba($secondary, .25);
+$input-focus-border-color:lighten($secondary, 25%);
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
